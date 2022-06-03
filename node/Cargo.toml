@@ -1,9 +1,8 @@
 [package]
 name = "realm3"
-version = "4.0.0-dev"
-description = "A fresh FRAME-based Substrate node, ready for hacking."
-authors = ["Kaichao Sun"]
-homepage = "https://substrate.io/"
+version = "1.0.0"
+authors = ["Burak Taban"]
+homepage = "https://realm3.com/"
 edition = "2021"
 license = "Unlicense"
 publish = false

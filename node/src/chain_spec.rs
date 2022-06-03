@@ -184,108 +184,40 @@ fn staging_network_config_genesis() -> GenesisConfig {
 	// for i in 1 2 3 4; do for j in im_online; do subkey --sr25519 inspect "$SECRET//$i//$j"; done; done
 	let initial_authorities: Vec<(AccountId, AccountId, BabeId, GrandpaId, ImOnlineId)> = vec![
 		(
-			// 5G9Ricxk4NuwhUzsifzeHUCPWn65j2mgzQXZFs5b24nJMnon
-			hex!["b48ad53b2d3b7842f52417ae44658240dad9a85c0bbbe52bff9a0f9dab8dd00e"].into(),
-			// 5DP7aavT96p5zFiGLXfWHWC65GehxwFP9PBuG3HMfPtWPvkc
-			hex!["3a46822b8993d49bd74116dae5a7402b1c742f932b44d3878b2240e0d4810c3d"].into(),
-			// 5DDE3ptBNGFEkZEVR4KArD3evwTr69jG5YLU1qjj5MEayBLM
-			hex!["32bbd5517ea65ced4b4d1b18797d42dacf8c4caa8e1e0a5e883a39a62b01154a"]
+			hex!["8ec1e7c4c650dca9e28c832c98a0ac2c8c0dd3bdeae14a96df3e43b83f42f563"].into(),
+			hex!["b699a2b4b78edcd60fc8e1b4e3e6878ec08dc50d3fe313ad7a3d5195fbc46e62"].into(),
+			hex!["08a2e13c1f592489810b4784407a4b7f98b3f935f1ed21452f861e07490e9548"]
 				.unchecked_into(),
-			// 5EoQhxogEzHDfJo5dVnVBUwwjyZJfWf9Gxwv8mzeotgDHS1u
-			hex!["790a497308b55518b2977dc5fd73439e1f8c4ffcb6863bf7002b076606e87900"]
+			hex!["00d35adafee6182d43d2c41a4e9100458bffbf67e3c35499fbcddc5b154fc502"]
 				.unchecked_into(),
-			// 5CRy8QK7tMsysghJYzGY8G97G5tj2tXdhGyMZrcNPFPPtEEL
-			hex!["10378faa125b7b9ce9e9f7e1cfc38658a6a069e9d0330d9d38984c82f89df34c"]
+			hex!["e8d1d638c2fe176be699f072d82b4ef0dae260811c497944950f7575785d961b"]
 				.unchecked_into(),
 		),
 		(
-			// 5FLUGF5HPTLWvDTXebqCpyiRJHB8t8mfxsUTq6ggfX8ZbHQm
-			hex!["02b0a01d3fd5ece4db1b45eadcc20ddd97167963ef2ac1210f0498de03c51b06"].into(),
-			// 5CJp2sfu7YZd8oBnZcetBF8Ws8BMBVBQPfXBv1PTC7awHRtx
-			hex!["e63da98a27c08e2ead42faf5298624f9b518056685dc247749d6f121b4008fb5"].into(),
-			// 5HeLRA1pibg2KzkrBjEaBHPMc72LKpuqhxGZ8PTenWoDx6XU
-			hex!["f6d3568573fd8a6f3627ef43d279cae66a955adf378e09d786dde341c825414a"]
+			hex!["022f1e430f86e0395b4280abc33e6499a199966f6a0e8ca2f9f5a71b166fb025"].into(),
+			hex!["e60cb3176c11cd889666a44a863581fc7954e1f556f74621056520ab4d5f5c15"].into(),
+			hex!["c077b860e2c03482adb1bfc1363d1ee2d766c339aaf2e277bb86f9729e14013f"]
 				.unchecked_into(),
-			// 5DCiFAhTcWahtZHirVYGDpQSPc5ypYzYadikHMqaqkPmzbTp
-			hex!["325780a64b5172f8398d9b28aec784332f42fa8508f73d006a4b609cd6cf253b"]
+			hex!["b0397920de5e3a562e1c4b7a13da69bd2f497781e23793e05ceae2409e2303b4"]
 				.unchecked_into(),
-			// 5GZaiKD4cZDx26KviF7gPSM4aPpPurhZySmjeHoYbBWsvhyf
-			hex!["c6f700672cdc93a23b1b134be663136eb1b6af33c0a1168ef905ce3990027f35"]
-				.unchecked_into(),
-		),
-		(
-			// 5FCY2LLS25NHCyDUY7KL4o7RCB7HiYtcrdLPgxuhwYk4YbTP
-			hex!["8aad8fc320c88ce1ddf85cb542e3d3d06aefceedcf9cbd7daa55e595fd2e5b78"].into(),
-			// 5EHuP7CfsC81uaBiMLxpq4LakmW2wfdcWWt2ojJnH1KVYkEp
-			hex!["628974006e2df3654ecf8011aa3add1e8cae365b326d5fe694be58b7530dc045"].into(),
-			// 5EqgeGGenmJNSc2ByUz2nahrcokbKpXrrDaG3cLQYDaK1NYk
-			hex!["7ac66c80c4d722851a38e0e0fda03a81a6b1375c731494ff4eaaca5723841b52"]
-				.unchecked_into(),
-			// 5GMJYpYD76CZhDChtTKJUWyruGoFHEpHM4MTa1Bsbd3af6st
-			hex!["bd99a5167cdaa2b6465d974818125ee432672f3362abe2f181552ddb06997295"]
-				.unchecked_into(),
-			// 5DPYBD9FcksMkamGiZ1RBTG8s96egUZw4Jb9SHB2qrbC7v9Q
-			hex!["3a994f2c7a5f970f1cb8c9be2daefa935da54e676e801b0641d1f71ec0d34336"]
-				.unchecked_into(),
-		),
-		(
-			// 5CXry4exXj7MAds8NAJ4QFFXXzZykXXg1Hp46Z45BSsFu6LE
-			hex!["14b64b3593749c8e600ff87c0bd36360fdad49be3248c2a8dce4e359221cf15a"].into(),
-			// 5DZgahg66K1zB4jhQp7wp7ChsXA8KTtWYdTbEz6bdhyp5vz7
-			hex!["42560ea357a94d3576fd21b5510c98cd9916c63a37ebd44e9c7af0a01e908c1c"].into(),
-			// 5HihBpuT5ETL6HJfVJdpCyM4N2B7QMS1ZTdw3KjZAzpkrDAJ
-			hex!["fa263cfe3d21931aee0f157b9dd04819492ca29b9f652e64d831f3bfaad74f47"]
-				.unchecked_into(),
-			// 5GHpoMBtRSriuZGnBGkQRrtYLbYzi76jQ1qBTStga55eZPQm
-			hex!["baf27ed81a311b06af8fcd042e5874ce8a26c7fa689e4f852e5d2144871cd2d6"]
-				.unchecked_into(),
-			// 5FtBt5o2zS9kqniJLwukYW48UupSpm7bMHLr7wyWPMwJjBkE
-			hex!["29b190372b53d161213c71f3db6918b26fb942bb0656a13de43297e69e4001e6"]
+			hex!["3ee4b3629f28525099bcfdcb379cb127892f0defd3809914b9168a25c9ef731d"]
 				.unchecked_into(),
 		),
 	];
 
-	let root_key: AccountId = hex![
-		// 5EvmQMfNq6x8k5kuL5TvHGMzJ84HwAsPZEmdxgeDQhRJFH67
-		"7ea6acda0f98b8819949972a2900e4998b9b629d5dba68b50fd195f2cee4f15a"
-	]
-	.into();
+	let root_key: AccountId =
+		hex!["7ea6acda0f98b8819949972a2900e4998b9b629d5dba68b50fd195f2cee4f15a"].into();
+
+	let faucets = vec![(
+		hex!["dea3e57f6cbae96c5832e18768b47b9f81d2af145b62b92ce20683bd8260dd57"].into(),
+		100_800,               // period
+		1_000_000_000_000_000, // period_limit
+		100_000_000_000,       // drip_limit
+	)];
 
 	let endowed_accounts: Vec<AccountId> = vec![root_key.clone()];
 
-	testnet_genesis(initial_authorities, vec![], vec![], root_key, endowed_accounts)
-}
-
-pub fn default_config() -> ChainSpec {
-	let boot_nodes = vec![];
-	let properties = Some(get_properties("R3", 12, SS58_PREFIX));
-
-	ChainSpec::from_genesis(
-		"Realm3",
-		"realm3",
-		ChainType::Live,
-		default_genesis,
-		boot_nodes,
-		Some(
-			TelemetryEndpoints::new(vec![(STAGING_TELEMETRY_URL.to_string(), 0)])
-				.expect("Staging telemetry url is valid; qed"),
-		),
-		None,
-		None,
-		properties,
-		Default::default(),
-	)
-}
-
-fn default_genesis() -> GenesisConfig {
-	let root_key: AccountId = hex![
-		// 5FemZuvaJ7wVy4S49X7Y9mj7FyTR4caQD5mZo2rL7MXQoXMi
-		"9eaf896d76b55e04616ff1e1dce7fc5e4a417967c17264728b3fd8fee3b12f3c"
-	]
-	.into();
-	let endowed_accounts: Vec<AccountId> = vec![root_key.clone()];
-
-	testnet_genesis(vec![], vec![], vec![], root_key, endowed_accounts)
+	testnet_genesis(initial_authorities, vec![], faucets, root_key, endowed_accounts)
 }
 
 /// Configure initial storage state for FRAME modules.

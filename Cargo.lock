@@ -5049,7 +5049,7 @@ dependencies = [
 
 [[package]]
 name = "realm3"
-version = "4.0.0-dev"
+version = "1.0.0"
 dependencies = [
  "clap",
  "frame-benchmarking",

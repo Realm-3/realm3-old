@@ -9,7 +9,7 @@ use sc_service::PartialComponents;
 
 impl SubstrateCli for Cli {
 	fn impl_name() -> String {
-		"Substrate Node".into()
+		"Realm3 Node".into()
 	}
 
 	fn impl_version() -> String {
@@ -37,7 +37,6 @@ impl SubstrateCli for Cli {
 			"dev" => Box::new(chain_spec::development_config()?),
 			"" | "local" => Box::new(chain_spec::local_testnet_config()?),
 			"staging" => Box::new(chain_spec::staging_network_config()),
-			"default" => Box::new(chain_spec::default_config()),
 			path => {
 				Box::new(chain_spec::ChainSpec::from_json_file(std::path::PathBuf::from(path))?)
 			},
