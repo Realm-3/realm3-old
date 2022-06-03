@@ -1,0 +1,35 @@
+[package]
+name = "rp-profile"
+version = "1.0.0"
+authors = ["Burak Taban"]
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://realm3.com"
+repository = "https://github.com/realm3/node"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+serde = { version = "1.0.136", optional = true }
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive"] }
+scale-info = { version = "2.0.1", default-features = false, features = ["derive"] }
+
+# frame dependencies
+frame-support = { default-features = false, version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18" }
+
+# substrate dependencies
+sp-std = { version = "4.0.0-dev", default-features = false, git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18" }
+sp-core = { version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+sp-runtime = { version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+
+[features]
+default = ["std"]
+std = [
+	"serde/std",
+	"codec/std",
+	"scale-info/std",
+	"frame-support/std",
+	"sp-core/std",
+	"sp-runtime/std",
+]

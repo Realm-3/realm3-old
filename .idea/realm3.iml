@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/node/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/faucets/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/friendship/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/profile/rpc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/profile/runtime-api/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/profile/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/rate-review/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/pallets/template/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/primitives/common/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/primitives/profile/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/runtime/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

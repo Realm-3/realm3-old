@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "node",
+    "pallets/*",
+    "pallets/profile/rpc",
+    "pallets/profile/runtime-api",
+	"primitives/*",
+    "runtime",
+]
+[profile.release]
+panic = "unwind"

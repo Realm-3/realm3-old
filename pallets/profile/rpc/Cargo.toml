@@ -1,0 +1,42 @@
+[package]
+name = "profile-rpc"
+version = "1.0.0"
+authors = ["Burak Taban"]
+edition = "2021"
+license = "Apache-2.0"
+homepage = "https://realm3.com"
+repository = "https://github.com/realm3/node"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+jsonrpc-core = "18.0.0"
+jsonrpc-core-client = "18.0.0"
+jsonrpc-derive = "18.0.0"
+serde = { version = "1.0.136", optional = true }
+codec = { package = "parity-scale-codec", version = "3.0.0", default-features = false, features = ["derive"] }
+scale-info = { version = "2.0.1", default-features = false, features = ["derive"] }
+
+# substrate dependencies
+sp-runtime = { version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+sp-rpc = { version = "6.0.0", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+sp-api = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+sp-blockchain = { version = "4.0.0-dev", git = "https://github.com/paritytech/substrate.git", branch = "polkadot-v0.9.18", default-features = false }
+
+rp-profile = { default-features = false, path = '../../../primitives/profile' }
+profile-runtime-api = { default-features = false, path = "../runtime-api" }
+pallet-profile = { default-features = false, path = '../' }
+
+[features]
+default = ["std"]
+std = [
+	"serde/std",
+	"codec/std",
+	"scale-info/std",
+	"sp-runtime/std",
+	"sp-api/std",
+	"profile-runtime-api/std",
+	"rp-profile/std",
+	"pallet-profile/std",
+]
