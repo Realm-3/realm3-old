@@ -28,11 +28,11 @@
             1000000000000000000000
           ],
           [
-            "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
+            "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
             1000000000000000000000
           ],
           [
-            "5C7Zx3veumUaM2RhDVn7HTKBzDe3Ac9NmBPv2JEJ2AimesZv",
+            "5GRXqvvXW7Z3EkCkQMRAg5jrDNXFZQeA2y4o13kNPd9PuZep",
             1000000000000000000000
           ]
         ]
@@ -55,22 +55,22 @@
         "validatorCount": 2,
         "minimumValidatorCount": 2,
         "invulnerables": [
-          "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
-          "5C7Zx3veumUaM2RhDVn7HTKBzDe3Ac9NmBPv2JEJ2AimesZv"
+          "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
+          "5GRXqvvXW7Z3EkCkQMRAg5jrDNXFZQeA2y4o13kNPd9PuZep"
         ],
         "forceEra": "NotForcing",
         "slashRewardFraction": 100000000,
         "canceledPayout": 0,
         "stakers": [
           [
-            "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
-            "5GC8DDem9BHEYmEqqZ9etEMt9QDMuZXtkKtdPnCFcuwrgUPb",
+            "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
+            "5FjnKts3iguVEsJzrHu4UyKmaPFZQakR6p4dHRQfaqdGLE6S",
             1000000000000000000,
             "Validator"
           ],
           [
-            "5C7Zx3veumUaM2RhDVn7HTKBzDe3Ac9NmBPv2JEJ2AimesZv",
-            "5HGLeFzatMouYxR3iVBe5tP1Adkp8q58Ct6Eh4YS5dMr5Xho",
+            "5GRXqvvXW7Z3EkCkQMRAg5jrDNXFZQeA2y4o13kNPd9PuZep",
+            "5DP9Xfdna8HcmGzZx1KfV7etUnxivPc4Ss7QTr3e29iemvDZ",
             1000000000000000000,
             "Validator"
           ]
@@ -83,21 +83,21 @@
       "session": {
         "keys": [
           [
-            "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
-            "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
+            "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
+            "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
             {
-              "babe": "5CG2dEwvZbEBccV2fhubBr4iVohSZbzrqon4JKQAvkroVp9d",
-              "grandpa": "5C5neEEWYoZWXTtD3dWXM2oLt1mjjFBzeHvjLksa7TeftwmJ",
-              "im_online": "5HKyJQh7bjRvQThaRHgQ23FB88R3Ad2X6RcYhaUcaNWWkhHb"
+              "babe": "5FcHy1KbfH6Aaa7w375pXCUYsCiPqgS8Pme8L4pmWnJDaUcM",
+              "grandpa": "5DudvoqK2aVc9bEAKwm6Hk88176LWt51TUco5NEExZ2g3ZGE",
+              "im_online": "5FgYZp4KJaXu52C91F8e5uoAeoQG73weF9VAot3Ft1LaenR9"
             }
           ],
           [
-            "5C7Zx3veumUaM2RhDVn7HTKBzDe3Ac9NmBPv2JEJ2AimesZv",
-            "5C7Zx3veumUaM2RhDVn7HTKBzDe3Ac9NmBPv2JEJ2AimesZv",
+            "5GRXqvvXW7Z3EkCkQMRAg5jrDNXFZQeA2y4o13kNPd9PuZep",
+            "5GRXqvvXW7Z3EkCkQMRAg5jrDNXFZQeA2y4o13kNPd9PuZep",
             {
-              "babe": "5GR4ceKnzxrU2aQ29FzMnEo3brGJmXAWQWg1WSfiUAfS9Z7h",
-              "grandpa": "5G3mMiSRd2bthY6CbDtLB1xGeEgncZ3Em2zVTd2p3RC4b1W1",
-              "im_online": "5DVAmHRE6BLeXtYy34HwvsNmcPUWmPDf734GJuYWmkiUM72i"
+              "babe": "5DtdLdVnWCjeTaLDHijJtx6fyFGYWgZ5w9f36H58symbDMhG",
+              "grandpa": "5Dtstyb1QQYxQmaY1uq2g1TpRP4WRpvvEdpb1gokNmdj3CjZ",
+              "im_online": "5FCSqCm6v4PAKJsWhAGKar7WjyFRtHnDMhVwRnhNsyqhh2WM"
             }
           ]
         ]
@@ -118,7 +118,7 @@
         "phantom": null,
         "members": [
           "5EvmQMfNq6x8k5kuL5TvHGMzJ84HwAsPZEmdxgeDQhRJFH67",
-          "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi"
+          "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis"
         ]
       },
       "elections": {
@@ -128,7 +128,7 @@
             1000000000000000000
           ],
           [
-            "5FHtFxYha62G1VP6w7iqa5JK4ow2pb6LEV4ZSCeT7XzMe9bi",
+            "5HMiMX7diKhufRRLPVjXcm98xKgLF2ppAjT3PGYQBMSXSfis",
             1000000000000000000
           ]
         ]
@@ -141,14 +141,7 @@
         "key": "5EvmQMfNq6x8k5kuL5TvHGMzJ84HwAsPZEmdxgeDQhRJFH67"
       },
       "faucets": {
-        "initialFaucets": [
-          [
-            "5H6dB6usUphQrZAQV73SccxjnmHkSbHTB3J7wdMswjooN7Tn",
-            100800,
-            1000000000000000,
-            100000000000
-          ]
-        ]
+        "initialFaucets": []
       }
     }
   }

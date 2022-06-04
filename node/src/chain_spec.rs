@@ -184,23 +184,23 @@ fn staging_network_config_genesis() -> GenesisConfig {
 	// for i in 1 2 3 4; do for j in im_online; do subkey --sr25519 inspect "$SECRET//$i//$j"; done; done
 	let initial_authorities: Vec<(AccountId, AccountId, BabeId, GrandpaId, ImOnlineId)> = vec![
 		(
-			hex!["8ec1e7c4c650dca9e28c832c98a0ac2c8c0dd3bdeae14a96df3e43b83f42f563"].into(),
-			hex!["b699a2b4b78edcd60fc8e1b4e3e6878ec08dc50d3fe313ad7a3d5195fbc46e62"].into(),
-			hex!["08a2e13c1f592489810b4784407a4b7f98b3f935f1ed21452f861e07490e9548"]
+			hex!["ea26037f0bbc6d19bfe919bfdfff27367f5b43b2b1369c9d8d14d086d40c2508"].into(),
+			hex!["a282510838804ef4f3dc790bd96c36a3f60ae0419cfc7a89eecda70c05314904"].into(),
+			hex!["9ccc2142fdaef1e07e4780cc4fcd6ea4263dab0babfa8b653d594d62d1deb813"]
 				.unchecked_into(),
-			hex!["00d35adafee6182d43d2c41a4e9100458bffbf67e3c35499fbcddc5b154fc502"]
+			hex!["518e0887dfc67b67e7b1565fc03984af2b3f5b8f1f4582cfeebe0dd0f9bc2cdb"]
 				.unchecked_into(),
-			hex!["e8d1d638c2fe176be699f072d82b4ef0dae260811c497944950f7575785d961b"]
+			hex!["a00a42866e2427d708b095c318f71db764e247395d3c01da4fe1076934ca0a45"]
 				.unchecked_into(),
 		),
 		(
-			hex!["022f1e430f86e0395b4280abc33e6499a199966f6a0e8ca2f9f5a71b166fb025"].into(),
-			hex!["e60cb3176c11cd889666a44a863581fc7954e1f556f74621056520ab4d5f5c15"].into(),
-			hex!["c077b860e2c03482adb1bfc1363d1ee2d766c339aaf2e277bb86f9729e14013f"]
+			hex!["c0d361a71b9fc62d6b84c73111c790bc79673a287825a09b56fdc7e989cff861"].into(),
+			hex!["3a4d12593892b069657449800d457d69997bc3527fde6d9097bf51a08f5a835f"].into(),
+			hex!["50c8cde1cfd625d3e6104be59d514f3bdbf40458925d64f0384b384d80c7c461"]
 				.unchecked_into(),
-			hex!["b0397920de5e3a562e1c4b7a13da69bd2f497781e23793e05ceae2409e2303b4"]
+			hex!["50f9cf4f1950b3583b55b7def885eda7ea65513206e70cafe2bfd0cef8c202a9"]
 				.unchecked_into(),
-			hex!["3ee4b3629f28525099bcfdcb379cb127892f0defd3809914b9168a25c9ef731d"]
+			hex!["8a9c15849ca6cec472aa17233f1660f94689855916248475b846c5646c558748"]
 				.unchecked_into(),
 		),
 	];
@@ -208,12 +208,13 @@ fn staging_network_config_genesis() -> GenesisConfig {
 	let root_key: AccountId =
 		hex!["7ea6acda0f98b8819949972a2900e4998b9b629d5dba68b50fd195f2cee4f15a"].into();
 
-	let faucets = vec![(
-		hex!["dea3e57f6cbae96c5832e18768b47b9f81d2af145b62b92ce20683bd8260dd57"].into(),
-		100_800,               // period
-		1_000_000_000_000_000, // period_limit
-		100_000_000_000,       // drip_limit
-	)];
+	let faucets = vec![];
+	// vec![(
+	// 	hex!["dea3e57f6cbae96c5832e18768b47b9f81d2af145b62b92ce20683bd8260dd57"].into(),
+	// 	100_800,               // period
+	// 	1_000_000_000_000_000, // period_limit
+	// 	100_000_000_000,       // drip_limit
+	// )];
 
 	let endowed_accounts: Vec<AccountId> = vec![root_key.clone()];
 
