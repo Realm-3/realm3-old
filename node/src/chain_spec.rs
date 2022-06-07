@@ -118,7 +118,7 @@ pub fn local_testnet_config() -> Result<ChainSpec, String> {
 				vec![authority_keys_from_seed("Alice"), authority_keys_from_seed("Bob")],
 				vec![],
 				vec![(
-					get_account_id_from_seed::<sr25519::Public>("Alice"),
+					hex!["dea3e57f6cbae96c5832e18768b47b9f81d2af145b62b92ce20683bd8260dd57"].into(),
 					100_800,               // period
 					1_000_000_000_000_000, // period_limit
 					100_000_000_000,       // drip_limit

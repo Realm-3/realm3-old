@@ -6,7 +6,7 @@ use scale_info::TypeInfo;
 use serde::{Deserialize, Serialize};
 use sp_std::prelude::*;
 
-pub type Area = u16;
+pub type Area = u32;
 pub type Pro = (Profession, Option<Vec<Area>>);
 
 #[derive(Encode, Decode, Clone, PartialEq, sp_core::RuntimeDebug, TypeInfo)]
@@ -120,7 +120,7 @@ impl<Hash> Profile<Hash> {
 				Some(old.business.profession),
 				Some(new.business.profession),
 			)
-				.unwrap(),
+			.unwrap(),
 			field: Self::check_value(old.business.field, new.business.field),
 			company: Self::check_value(old.business.company, new.business.company),
 			website: Self::check_value(old.business.website, new.business.website),
@@ -201,17 +201,49 @@ pub enum Profession {
 	None,
 	RealEstateBroker,
 	RealEstateAgent,
-	PropertyInspector,
 	RealEstateAttorney,
-	Appraiser,
-	Photographer,
+	MortgageBroker,
+	HomeInspector,
+	ResidentialAppraiser,
+	CommercialAppraiser,
+	RealEstatePhotographer,
+	HomeStager,
+	Architect,
 	InteriorDesigner,
+	RealEstateInvestor,
+	PropertyManager,
+	LeasingConsultant,
+	RealEstateFinancialAnalyst,
+	RealEstateMarketingSpecialist,
+	RealEstateEscrowOfficer,
+	EscrowOfficer,
+	ForeclosureSpecialist,
+	RealEstateDeveloper,
+	RealEstateWholesaler,
+	RealEstateAssistant,
+	RealEstateLoanOfficer,
+	Other(Option<OtherProfessions>),
 }
 
 impl Default for Profession {
 	fn default() -> Self {
 		Self::None
 	}
+}
+
+#[derive(Encode, Decode, Clone, Copy, PartialEq, sp_core::RuntimeDebug, TypeInfo)]
+#[cfg_attr(feature = "std", derive(Serialize, Deserialize))]
+pub enum OtherProfessions {
+	CorporateRealEstateManager,
+	CommunityDevelopmentManager,
+	ComplianceSpecialist,
+	LandAdministrationManager,
+	LeaseAdministrator,
+	MortgageCollectionManager,
+	MortgageLoanOfficer,
+	RetailRealEstateManager,
+	RealEstateZoningManager,
+	RealAstateAndRelocationDirector,
 }
 
 #[derive(Encode, Decode, Clone, PartialEq, sp_core::RuntimeDebug, TypeInfo)]
