@@ -21,6 +21,7 @@ RUN cargo build --release
 FROM ubuntu as runner
 RUN apt-get update
 COPY --from=builder /realm3/target/release/realm3 /usr/local/bin/realm3
+COPY --from=builder /realm3/node/specs/customSpecRaw.json /realm3Spec.json
 
 ENTRYPOINT ["realm3"]
 # You should be able to run a validator using this docker image in a bash environmment with the following command:

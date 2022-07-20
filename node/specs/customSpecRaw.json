@@ -2,10 +2,7 @@
   "name": "Realm3",
   "id": "realm3",
   "chainType": "Live",
-  "bootNodes": [
-    "/ip4/165.22.229.51/tcp/30333/p2p/12D3KooWCurm4ieJvkiVPPMzVNXzSMkceRfbTVJQUvhzJHkFTF2t",
-    "/ip4/138.197.130.65/tcp/30333/p2p/12D3KooWJ4fVSNefEJcBSs5Ujhc67wPt537NC1Kygnje9QDEsQ81"
-  ],
+  "bootNodes": [ ],
   "telemetryEndpoints": [
     [
       "/dns/telemetry.polkadot.io/tcp/443/x-parity-wss/%2Fsubmit%2F",
